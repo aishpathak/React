@@ -1,0 +1,7 @@
+JSX: JSX uses internally React.createElement and it is at the end Javascript object which gets render in DOM.
+                                            or
+is a syntax extension for javascript that lets you write HTML like markup inside javascript.
+React.createElement vs JSX
+const header1 = <h1>Hello From React</h1>
+const header1 = React.createElement('h1',{},
+'Hello From React');

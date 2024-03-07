@@ -1,0 +1,8 @@
+Is JSX mandatory for React-> no
+IS ES6 Mandatory for React -> no
+Q: How can I write component in JSX?
+A: const a = (
+    return <h1>Hello World from React</h1>
+)
+const root = ReactDom.createRoot(document.getElementById('root'))
+root.render(a);
