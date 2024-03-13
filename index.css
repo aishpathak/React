@@ -4,3 +4,41 @@
 #title1{
     background-color: blue;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+}
+.nav-items> ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items >ul >li{
+    padding: 10px;
+}
+.logo{
+    width: 100px;
+}
+.card{
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.card >img{
+    width: 100px;
+}
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.div1{
+    background-color: blue;
+}
+.shimmer-card{
+    width: 200px;
+    height: 200px;
+    background-color:lightgray;
+    margin: 20px;
+}

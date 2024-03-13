@@ -6,3 +6,7 @@ A: const a = (
 )
 const root = ReactDom.createRoot(document.getElementById('root'))
 root.render(a);
+
+{/*
+
+*/}

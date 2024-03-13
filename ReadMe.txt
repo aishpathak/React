@@ -27,3 +27,9 @@ It is an empty tag
 Virtual Dom is a Representation of actual DOM. it uses reconilation process which uses diff algorithm which compares previous and new node if
 it find their is any change then only that node it will re render not all DOm.
 it uses key to make it fast.. supoose we have 3 div .. how will it come to know which one need to rerender.with the help of key it only render that node.
+
+Every Component in React maintain a state in React and you can put in all the variable into a state.
+
+UseEffect has a callback function,which will be called .. whenever my dependency gets updated. If I don't have any dependency then it will called once after initial render of UI.
+
+Use state is react hooks , which react gives you to create state variable in react.

@@ -55,9 +55,33 @@ import ReactDOM from "react-dom/client";
 //     Reac.createElement("li",{},)
 // ])])
 
-const heading = (<h1 id="title" key="h1">
-    Namaste React from JSX
-    </h1>);
+/*Name of the component start with capital letter // functional component   
+ functional component is a noramla function it is returing some piece of JSX
+`What is react element : it is an object
+What is functional component : it is a function
+<Title></Title> or {Title()}
+if you got xss(Cross Side Scripting attack) attack still JSX will take care of this, if you have put your code here {} JSX will take care of this
+from any kind of XSS
+how it does it , if you give anything is {} it will santizes it.
+
+<Title>// if we use this way.. we call it component composition.    
+*/
+
+const Title = ()=>(
+    <img 
+    alt="logo" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fyt3.ggpht.com%2Fytc%2FAKedOLSpK3T_2RxkMYb-pk9oENQB0NvYpeOdXRgQe8i5%3Ds800-c-k-c0x00ffffff-no-rj&tbnid=45PuluQGRYSthM&vet=12ahUKEwi52qGD4N6EAxWMa2wGHQvNBpMQMygEegQIARA7..i&imgrefurl=https%3A%2F%2Fwww.speakrj.com%2Faudit%2Freport%2FUCHm4VJ95cMP434x059ZmLtw%2Fyoutube%2Fincome-stats&docid=9JCbl9Qk7NxW_M&w=800&h=800&itg=1&q=food%20villa&ved=2ahUKEwi52qGD4N6EAxWMa2wGHQvNBpMQMygEegQIARA7" />
+    );
+
+const HeaderComponent = ()=>{ 
+    return (
+    <div>
+        {console.log('Any JS Code')}
+        <Title></Title>
+        <h1>
+            Namaste React from functional component
+        </h1>
+    </div>);
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<HeaderComponent />);
